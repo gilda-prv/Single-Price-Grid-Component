@@ -19,7 +19,7 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   max-width: 700px;
 }
 .card1 {
@@ -46,17 +46,73 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.card2 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+}
+.card2 h3 {
+  color: white;
+}
+.num {
+  display: flex;
+  margin-top: 15px;
+}
+.card2 h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+}
+.num span {
+  color: hsla(203, 44%, 93%, 0.597);
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.card2 p {
+  font-weight: 400;
+  color: white;
+  margin-top: 8px;
+}
+.card2 button {
+  padding: 18px 98px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 34px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  -webkit-box-shadow: 5px 5px 2px 2px rgba(90, 90, 90, 1);
+  box-shadow: 4px 5px 2px 2px rgba(90, 90, 90, 0.263);
+}
+.card3 {
+  padding: 40px;
+  background-color: hsla(179, 62%, 43%, 0.575);
+}
+.card3 h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+.card3 p {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.758);
+  text-align: start;
+  padding-right: 56.9px;
+  font-size: 15px;
+  line-height: 25px;
+}
 .attribution {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 20px;
+  margin: 0 auto;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
