@@ -25,6 +25,8 @@ body {
 .card1 {
   background-color: white;
   padding: 40px 40px 40px 40px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .card1 h1 {
   color: hsl(179, 62%, 43%);
@@ -49,6 +51,7 @@ body {
 .card2 {
   background-color: hsl(179, 62%, 43%);
   padding: 40px;
+  border-bottom-left-radius: 15px;
 }
 .card2 h3 {
   color: white;
@@ -87,6 +90,7 @@ body {
 .card3 {
   padding: 40px;
   background-color: hsla(179, 62%, 43%, 0.575);
+  border-bottom-right-radius: 15px;
 }
 .card3 h3 {
   color: white;
@@ -115,4 +119,35 @@ body {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
   /* margin-left: 5px; */
+}
+@media only screen and (max-width: 1242px) {
+  body {
+    min-height: 100vh;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 390px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card1 h1 {
+    font-size: 23px;
+  }
+  .card1 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card2 {
+    border-radius: 0;
+  }
+  .card2 button {
+    padding: 18px 98px;
+  }
+  .card3 {
+    border-bottom-left-radius: 15px;
+  }
+  .card3 p {
+    font-size: 17px;
+  }
 }
